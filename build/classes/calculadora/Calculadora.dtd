@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/Calculadora.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE AnchorPane SYSTEM "Calculadora.dtd">
+
+    <AnchorPane>
+    ...
+    </AnchorPane>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT AnchorPane (children)*>
+<!ATTLIST AnchorPane
+    id CDATA #IMPLIED
+    prefHeight CDATA #IMPLIED
+    prefWidth CDATA #IMPLIED
+    style CDATA #IMPLIED
+    xmlns CDATA #IMPLIED
+    xmlns:fx CDATA #IMPLIED
+    fx:controller CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT children (ImageView|Label|Pane|GridPane|Button)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT ImageView (image|effect)*>
+<!ATTLIST ImageView
+    fitHeight CDATA #IMPLIED
+    fitWidth CDATA #IMPLIED
+    layoutX CDATA #IMPLIED
+    pickOnBounds CDATA #IMPLIED
+    preserveRatio CDATA #IMPLIED
+    AnchorPane.bottomAnchor CDATA #IMPLIED
+    AnchorPane.leftAnchor CDATA #IMPLIED
+    AnchorPane.rightAnchor CDATA #IMPLIED
+    AnchorPane.topAnchor CDATA #IMPLIED
+    layoutY CDATA #IMPLIED
+    opacity CDATA #IMPLIED
+    smooth CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT image (Image)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Image EMPTY>
+<!ATTLIST Image
+    url CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Label (font)*>
+<!ATTLIST Label
+    prefHeight CDATA #IMPLIED
+    layoutX CDATA #IMPLIED
+    layoutY CDATA #IMPLIED
+    text CDATA #IMPLIED
+    textFill CDATA #IMPLIED
+    prefWidth CDATA #IMPLIED
+    alignment CDATA #IMPLIED
+    GridPane.columnIndex CDATA #IMPLIED
+    GridPane.halignment CDATA #IMPLIED
+    GridPane.valignment CDATA #IMPLIED
+    contentDisplay CDATA #IMPLIED
+    fx:id CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT font (Font)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Font EMPTY>
+<!ATTLIST Font
+    name CDATA #IMPLIED
+    size CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Pane (children)*>
+<!ATTLIST Pane
+    layoutX CDATA #IMPLIED
+    layoutY CDATA #IMPLIED
+    prefHeight CDATA #IMPLIED
+    prefWidth CDATA #IMPLIED
+    style CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT GridPane (columnConstraints|rowConstraints|children)*>
+<!ATTLIST GridPane
+    layoutX CDATA #IMPLIED
+    layoutY CDATA #IMPLIED
+    prefHeight CDATA #IMPLIED
+    prefWidth CDATA #IMPLIED
+    GridPane.columnIndex CDATA #IMPLIED
+    GridPane.rowIndex CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT columnConstraints (ColumnConstraints)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT ColumnConstraints EMPTY>
+<!ATTLIST ColumnConstraints
+    hgrow CDATA #IMPLIED
+    minWidth CDATA #IMPLIED
+    prefWidth CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT rowConstraints (RowConstraints)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT RowConstraints EMPTY>
+<!ATTLIST RowConstraints
+    minHeight CDATA #IMPLIED
+    prefHeight CDATA #IMPLIED
+    vgrow CDATA #IMPLIED
+    maxHeight CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Button (effect|cursor|font)*>
+<!ATTLIST Button
+    prefHeight CDATA #IMPLIED
+    alignment CDATA #IMPLIED
+    maxWidth CDATA #IMPLIED
+    contentDisplay CDATA #IMPLIED
+    mnemonicParsing CDATA #IMPLIED
+    onAction CDATA #IMPLIED
+    prefWidth CDATA #IMPLIED
+    style CDATA #IMPLIED
+    text CDATA #IMPLIED
+    textFill CDATA #IMPLIED
+    GridPane.halignment CDATA #IMPLIED
+    GridPane.rowIndex CDATA #IMPLIED
+    layoutY CDATA #IMPLIED
+    minWidth CDATA #IMPLIED
+    GridPane.columnIndex CDATA #IMPLIED
+    minHeight CDATA #IMPLIED
+    layoutX CDATA #IMPLIED
+    GridPane.valignment CDATA #IMPLIED
+    maxHeight CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT effect (Glow|DropShadow)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Glow EMPTY>
+<!ATTLIST Glow
+    level CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT cursor (Cursor)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Cursor EMPTY>
+<!ATTLIST Cursor
+    fx:constant CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT DropShadow (color)*>
+<!ATTLIST DropShadow
+    height CDATA #IMPLIED
+    radius CDATA #IMPLIED
+    width CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT color (Color)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Color EMPTY>
+<!ATTLIST Color
+    red CDATA #IMPLIED
+    green CDATA #IMPLIED
+    blue CDATA #IMPLIED
+  >
